@@ -1,4 +1,4 @@
-def count_lines_in_txt(filepath="Source.txt"):
+def count_lines_in_txt(filepath="./aipp/assignment-4/Source.txt"):
     """
     Return the number of lines in a .txt file (default: "Source.txt").
 
@@ -26,10 +26,11 @@ def count_lines_in_txt(filepath="Source.txt"):
 
 if __name__ == "__main__":
     # Read default "Source.txt" or prompt for a path
-    path = input("Enter path to .txt file (press Enter for 'Source.txt'): ").strip() or "Source.txt"
+    path = ./aipp/assignment-4/Source.txt
     try:
         lines = count_lines_in_txt(path)
     except Exception as e:
         print(f"Error: {e}")
     else:
+
         print(f"Number of lines: {lines}")
